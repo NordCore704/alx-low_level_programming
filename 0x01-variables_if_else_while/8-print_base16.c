@@ -9,15 +9,15 @@
 
 int main(void)
 {
-	int num = '0'; /*Initialize num to 0*/
-	char letter = 'a'; /*Initialize letter to a*/
+	int num = '0';
+	char letter = 'a';
 
-	while (num <= '9') /*Print 0-9*/
+	while (num <= '9')
 	{
 		putchar(num);
 		num++;
 	}
-	while (letter <= 'f') /*Print a-f*/
+	while (letter <= 'f')
 	{
 		putchar(letter);
 		letter++;
