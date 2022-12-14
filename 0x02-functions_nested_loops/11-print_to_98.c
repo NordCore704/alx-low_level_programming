@@ -2,50 +2,24 @@
 #include <stdio.h>
 
 /**
- * print_times_table - prints time table with provided number
- * @n: the provided value by the user
- * Return: Always 0 (Success)
+ * print_to_98 - prints all natural numbers to 98
+ *
+ * @n: number provided by user
  */
 
-void print_times_table(int n)
-{
-	int row;
-	int column;
-	int product;
+void print_to_98(int n)
 
-	if (n < 0 || n >= 15)
-		return;
-	for (row = 0; row <= n; row++)
+{
+	if (n < 98)
 	{
-		for (column = 0; column <= n; column++)
-		{
-			product = (row * column);
-			if (column == 0)
-				_putchar('0' + product);
-			else
-			{
-				_putchar(',');
-				_putchar(' ');
-				if (product <= 9)
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar('0' + product);
-				}
-				else if (product > 9 && product < 100)
-				{
-					_putchar(' ');
-					_putchar('0' + (product / 10));
-					_putchar('0' + (product % 10));
-				}
-				else if (product >= 100)
-				{
-					_putchar('0' + (product / 100));
-					_putchar('0' + ((product / 10) % 10));
-					_putchar('0' + (product % 10));
-				}
-			}
-		}
-		_putchar('\n');
+		for (n = n; n < 98; n++)
+			printf("%d, ", n);
+		printf("%d\n", 98);
+	}
+	else
+	{
+		for (n = n; n > 98; n--)
+			printf("%d, ", n);
+		printf("%d\n", 98);
 	}
 }
