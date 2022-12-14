@@ -1,1 +1,1 @@
-Starting with C
+readme for debugging project
